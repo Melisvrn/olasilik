@@ -1,0 +1,90 @@
+/*body{
+    background: linear-gradient(#f4f9f9,#b2ebf2,#f4f9f9);
+    
+}*/
+.container{
+    border: 2px solid #073857;
+    background-color: #e3f1f8;
+    border-radius: 8px;
+    width: 75%;
+    max-width: 790px;
+    margin: 10px auto 15px auto;
+    padding: 16px;
+
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.container h3{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+.container p{
+    font-size: 18px;
+    text-align: center;
+    color: #DD2C00;
+}
+.histogram{
+    border: 2px solid #073857;
+    max-width: 790px;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px auto;
+    text-align: center;
+}
+header{
+    border: 2px solid #0dceda;
+    text-align: center;
+    padding: .5em;
+    color: #f57170;
+    font-size: 20px;
+                   
+}           
+.data-heading{
+    color: inherit;
+}
+li {
+    color: black;
+    background-color:#D2E603;
+    border: 2px solid #D2E603;
+    position: relative;
+    padding: .75rem 1.25rem;
+    width: 100%;
+    margin: 0 auto 0 5px;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+.selectButtons button{
+                    
+    border: 2px solid #52bad5;
+    background-color:#52bad5;
+    color: black;
+    height: 40px;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    
+}
+.selectButtons::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.selectButtons button:not(:last-child){
+    border-right:none;
+}
+.selectButtons button:hover{
+    background-color:#239ab9;
+}
+
+@media (max-width:500px){
+    .container{
+        text-align: center;
+    }
+}

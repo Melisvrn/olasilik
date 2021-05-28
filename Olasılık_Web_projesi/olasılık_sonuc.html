@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Olasılık Projesi</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"> </script>
+
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    </head>
+    <body>
+
+        <header>
+            <h1>SONUCLAR</h1>
+        </header>
+    
+        <ul>
+            <li>
+                <h2 class="data-heading">Veri setiniz: </h2>
+                <p id="deneme" style="word-break: break-all;font-family:Courier!important"></p>
+            </li>
+            <li>
+                <p style="text-align: center; font-size: 18px;">Yeni veri seti girmek için <a href= "index.html">tıklayınız.</a></p>
+            </li>
+        </ul>
+
+        <div class="selectButtons" style="width: 100%;">
+            <button class="btn btn1" id="selectMod" style="width:11.1%">Mod</button>
+            <button class="btn" id="selectMedyan" style="width:11.1%">Medyan</button>
+            <button class="btn" id="selectSapma" style="width:11.1%">Sapma</button>
+            <button class="btn" id="selectVaryans" style="width:11.1%">Varyans</button>
+            <button class="btn" id="selectAOrt" style="width:11.1%">AOrt</button>
+            <button class="btn" id="selectHOrt" style="width:11.1%">HOrt</button>
+            <button class="btn" id="selectGOrt" style="width:11.1%">GOrt</button>
+            <button class="btn" id="selectOSapma" style="width:11.1%">OrtSapma</button>
+            <button class="btn" id="selectDKat" style="width:11.1%">DKatsayı</button>
+        </div>
+        <br><br>
+        <div class="container" id="mod" style="display: none;">
+            <u><h3>Mod</h3></u>
+            <p id="modsonuc"></p>
+        </div>
+        <div class="container" id="medyan" style="display: none;">
+            <u><h3>Medyan</h3></u>
+            <p id="medyansonuc"></p>
+        </div>
+        <div class="container" id="sapma" style="display: none;">
+            <u><h3>Standart Sapma</h3></u>
+            <p id="sapmasonuc"></p>
+        </div>
+        <div class="container" id="varyans" style="display: none;">
+            <u><h3>Varyans</h3></u>
+            <p id="varyanssonuc"></p>
+        </div>
+        <div class="container" id="aort" style="display: none;">
+            <u><h3>Aritmetik Ortalama</h3></u>
+            <p id="aortsonuc"></p>
+        </div>
+        <div class="container" id="hort" style="display: none;">
+            <u><h3>Harmonik Ortalama</h3></u>
+            <p id="hortsonuc"></p>
+        </div>
+        <div class="container" id="gort" style="display: none;">
+            <u><h3>Geometrik Ortalama</h3></u>
+            <p id="gortsonuc"></p>
+        </div>
+        <div class="container" id="osapma" style="display: none;">
+            <u><h3>Ortalama Sapma</h3></u>
+            <p id="osapmasonuc"></p>
+        </div>
+        <div class="container" id="dkatsayısı" style="display: none;">
+            <u><h3>Değişim Katsayısı</h3></u>
+            <p id="dkatsayısısonuc"></p>
+        </div>
+
+        <div class="histogram" id="histogram">
+            <canvas id="chart" style ="width:100%;max-width:600px;max-height:600px"></canvas>
+        </div>
+
+        
+        <script src="kodlar.js"></script>
+        <script src="handler.js"></script>
+        
+        
+        
+    
+
+    </body>
+</html>
